@@ -83,6 +83,7 @@ def main():
                 
                 # Pause to observe; in production remove or replace with proper wait conditions.
                 page.wait_for_timeout(1000)
+                logging.info("Form filled successfully")
             except TimeoutError as te:
                 logging.error("Timeout occurred during page interaction: %s", te)
             except Exception as ex:
