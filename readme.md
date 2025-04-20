@@ -48,13 +48,11 @@ This project automates the process of filling out an e-visa application form usi
    ```
 
 5. **Run the Script**:
-   Execute the script using the following command:
+   Execute the automation script using the following command:
    ```bash
-   python sample.py
+   python auto_optimized_reusable.py
    ```
-
-6. **Modify Browser Settings**:
-   By default, the browser runs in non-headless mode (with UI). To run it in headless mode, modify the `headless` parameter in the script:
+   By default, the script launches the browser in non-headless mode (with UI). To run it in headless mode, modify the following line in the [auto_optimized_reusable.py](auto_optimized_reusable.py) file:
    ```python
    browser = p.chromium.launch(headless=True)
    ```
@@ -62,8 +60,9 @@ This project automates the process of filling out an e-visa application form usi
 ## Notes
 
 - Ensure you have a stable internet connection while running the script.
-- The script uses hardcoded values for some fields (e.g., email, address). Update these values in the script as needed.
-- If you encounter any issues, verify that all dependencies are installed and the `data.json` file is correctly formatted.
+- The script uses hardcoded values for some fields (e.g., email, address). Update these values in the source code as needed.
+- The current input JSON is a sample. If your application requires additional fields, update the `data.json` accordingly.
+- For troubleshooting issues, double-check that all dependencies are correctly installed and that the JSON file is properly formatted.
 
 ## License
 
